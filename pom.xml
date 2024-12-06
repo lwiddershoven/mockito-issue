@@ -42,7 +42,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <!-- Java 21+ does not allow dynamic loading/  some mockito functionality - this is how we enable that explicitly-->
                 <executions>
                     <execution>
                         <goals>

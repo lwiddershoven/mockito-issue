@@ -35,6 +35,15 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-junit5-mockito</artifactId>
             <scope>test</scope>
+<!--            <exclusions>-->
+<!--                &lt;!&ndash; Fix for: https://github.com/mockito/mockito/issues/3528 -->
+<!--                     Mockito 5.14 + Java 21 + Maven surefire agent config : Cannot mock final class-->
+<!--                &ndash;&gt;-->
+<!--                <exclusion>-->
+<!--                    <artifactId>mockito-subclass</artifactId>-->
+<!--                    <groupId>org.mockito</groupId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
         </dependency>
     </dependencies>
     <build>
